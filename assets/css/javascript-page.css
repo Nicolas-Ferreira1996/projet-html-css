@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+/*header*/
+
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+header .lien-pages{
+    text-decoration: none;
+    color: white;
+}
+
+header .lien-pages:hover{
+    color: #dfbb2c;
+    border: 1px solid black;
+    border-radius: 24px;
+    background-color: white;
+    padding: 8px;
+    font-size: 16px;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+header{
+    background-color: #dfbb2c;
+}
+
+h1{
+    color: white;
+}
+
+/* Main */
+
+h2{
+    font-size: 30px;
+    color: #dfbb2c;
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+nav img{
+    width: 666px;
+    height: 375px;
+}
+
+.div-ul-nav{
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed #dfbb2c;
+    border-radius: 25px;
+    height: fit-content;
+    padding: 0px 10px 40px 10px;
+    
+}
+
+.div-ul-nav h2{
+    text-align: center;
+    color: grey;
+    font-size: 26px;
+}
+
+.div-ul-nav a{
+    text-decoration: none;
+    color: #dfbb2c;
+}
+
+.div-ul-nav li{
+    margin-top: 32px;
+    padding-right: 30px;
+}
+
+/* section intro-js */
+
+.intro-js{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+    color: grey;
+}
+
+/* section ecriture-js */
+
+.ecriture-js{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+    color: grey;
+}
+
+.ecriture-js h3{
+    color: #dfbb2c;
+}
+
+span{
+    background-color: #E1E1E1;
+    color: #FE490A;
+    font-size: 14px;
+}
+
+/* article code-js-interieur-balise-html */
+
+.code-js-interieur-balise-html img{
+    width: 40%;
+    height: 400px;
+    border-radius: 5px;
+    border: 4px solid #dfbb2c;
+}
+
+/* article code-js-elem-script-page-html */
+
+.code-js-elem-script-page-html img{
+    width: 40%;
+    height: 550px;
+    border-radius: 5px;
+    border: 4px solid #dfbb2c;
+}
+
+/* article code-js-fichier-separe */
+
+.img-js-fichier-separe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-js-fichier-separe img{
+    width: 40%;
+    border-radius: 5px;
+    border: 4px solid #dfbb2c;
+}
+
+/* main */
+
+/* footer */
+
+footer p{
+    text-align: center;
+    color: grey;
+}
+
+@media (max-width: 1180px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav div img{
+        padding-top: 20px;
+    }
+
+    .img-js-fichier-separe img{
+        width: 45%;
+    }
+
+    .code-js-interieur-balise-html img{
+        width: 55%;
+        height: 360px;
+    }
+
+    .code-js-elem-script-page-html img{
+        width: 55%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 780px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-js-fichier-separe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-js-fichier-separe img{
+        margin-top:20px;
+        width: 70%;
+    }
+
+    .code-js-interieur-balise-html img{
+        width: 70%;
+        height: 340px;
+    }
+
+    .code-js-elem-script-page-html img{
+        width: 70%;
+        height: 460px;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .code-js-interieur-balise-html img{
+        width: 90%;
+        height: 300px;
+    }
+
+    .code-js-elem-script-page-html img{
+        width: 90%;
+        height: 420px;
+    }
+
+
+}
+
+@media (max-width: 476px) {
+
+    header ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-js-fichier-separe img{
+        margin-top:20px;
+        width: 90%;
+    }
+
+    .code-js-interieur-balise-html img{
+        width: 90%;
+        height: 240px;
+    }
+
+    .code-js-elem-script-page-html img{
+        width: 90%;
+        height: 320px;
+    }
+    
+}

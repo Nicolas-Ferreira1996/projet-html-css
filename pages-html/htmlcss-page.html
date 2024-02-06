@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/htmlcss-page.css">
+    <title>HTML/CSS</title>
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../index.html"><img src="../assets/images/logo-site.png" alt="logo site"></a>
+            <h1>Deviens Dev</h1>
+        </div>
+        <ul>
+            <li><a class="lien-pages" href="../pages-html/htmlcss-page.html">HTML/CSS</a></li>
+            <li><a class="lien-pages" href="../pages-html/javascript-page.html">JavaScript</a></li>
+            <li><a class="lien-pages" href="../pages-html/php-page.html">PHP</a></li>
+            <li><a class="lien-pages" href="../pages-html/nous-contacter-page.html">Nous Contacter</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <nav>
+            <div class="div-ul-nav">
+                <h2>Sommaire HTML/CSS</h2>
+                <ul>
+                    <li><a href="#presentation-html">Qu'est ce que le langage HTML ?</a></li>
+                    <li><a href="#structure-html">Structure d'une page HTML</a></li>
+                    <li><a href="#presentation-css">Qu'est ce que le langage CSS ?</a></li>
+                    <li><a href="#syntaxe-css">La syntaxe de CSS</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="../assets/images/image-intro-htmlcss.png" alt="illustration HTML et CSS">
+            </div>
+        </nav>
+
+        <section class="langage-html">
+            <h2 id="presentation-html">Qu'est ce que le langage HTML ?</h2>
+                <article class="intro-langage-html">
+                    <p>Pour créer une page web en HTML, il suffit de créer un fichier ayant l'extension .html, ce fichier s'ouvre dans le navigateur web simplement en faisant un double-clic dessus.
+                        <br>
+                    Le langage HTML utilise ce qu'on appelle des balises, on les écrit entre chevrons <code>&lt;</code> et <code>&gt;</code>.
+                        <br>
+                    Le contenu d'un élément est placé entre une balise ouvrante et une balise fermante.</p>
+                
+                    <h3>Et elles servent à quoi les balises concrètement ?</h3>
+                
+                    <p>Les balises indiquent la nature du texte qu'elles encadrent. Elles permettent au navigateur de comprendre ce qu'il faut afficher à l'écran pour les visiteurs d'un site web.
+                        <br>
+                    Si elles pouvaient parler, elles diraient :</p>
+                    <ul>
+                        <li><code>&lt;img&gt;</code>: “Ceci est une image”,</li>
+                        <li><code>&lt;p&gt;  &lt;&#47;p&gt;</code>: “Ceci est un paragraphe de texte”, etc.</li>
+                    </ul>
+                </article>
+                
+                <article class="balises-html">
+                
+                    <h3>On distingue deux types de balises :</h3>
+                
+                    <ul>
+                        <li>Les balises en paires (une balise ouvrante et une balise fermante)</li>
+                        <li>Et les balises orphelines (une seule balise).</li>
+                    </ul>
+
+                    <p><em>Les balises en paires</em></p>
+                    
+                    <p>Elles s'ouvrent, contiennent du texte, et se ferment plus loin.
+                        Si on prend la balise title qui correspond au titre de la page ou la balise p qui correspond à un paragraphe, ça nous donne :</p>
+                
+                    <ul>
+                        <li><code>&lt;title&gt;Ceci est le titre de ma page&lt;&#47;title&gt;</code>: Pour l'ordinateur, tout ce qui n'est pas entre ces deux balises n'est pas un titre.</li>
+                        <li><code>&lt;p&gt;Ceci est un paragraphe&lt;&#47;p&gt;</code>: Pour l'ordinateur, tout ce qui n'est pas entre ces deux balises n'est pas un paragraphe.</li>
+                    </ul>
+
+                    <p>On a donc, une balise ouvrante et une balise fermante.</p>
+                
+                    <p><em>Les balises orphelines</em></p>
+
+                    <p>Ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis (par exemple une image).
+                        <br>
+                    Il n'est pas nécessaire de délimiter le début et la fin de l'image, on veut juste dire à l'ordinateur “Insère une image ici”.
+                        <br>
+                    Il n'y a donc pas besoin de faire une balise ouvrante et une fermante, d'où l'appellation "balise orpheline".</p>
+                    
+                    <p>Exemple de balises orphelines:</p>
+                        <ul>
+                            <li><code>&lt;img&gt;</code></li>
+                            <li><code>&lt;br&gt;</code></li>   
+                        </ul>
+                </article>
+        </section>
+        
+        <section class="structure-html">
+            <h2 id="structure-html">Structure d'une page HTML</h2>
+                <img src="../assets/images/exemple-structure-html.png" alt="exemple structure html">
+            <p>Voyons à quoi servent toutes ces balises:</p>
+                <ul>
+                    <li>La première ligne  <code>&lt;!DOCTYPE html&gt;</code> est une balise orpheline indispensable : elle indique qu'il s'agit d'une page HTML.</li>
+                    <li>La balise en paire <code>&lt;html&gt; &lt;/html&gt;</code> englobe tout le contenu de la page web.</li>
+                    <li>La balise en paire <code>&lt;head&gt; &lt;/head&gt;</code> contient deux balises qui donnent des informations au navigateur : l’encodage et le titre de la page.</li>
+                    <li>La balise orpheline <code>&lt;meta charset="utf-8"&gt;</code> indique l'encodage utilisé dans le fichier  .html : cela détermine comment les caractères spéciaux s'affichent (accents, idéogrammes chinois et japonais, etc.).</li>
+                    <li>La balise en paire <code>&lt;title&gt; &lt;/title&gt;</code> indique au navigateur le titre de la page web. Toute page doit avoir un titre qui décrit ce qu'elle contient, il s'affichera dans l'onglet du navigateur, et apparaîtra dans les résultats de recherche, comme sur Google. Autant vous dire que bien choisir son titre est important !</li>
+                    <li>La balise en paire <code>&lt;body&gt; &lt;/body&gt;</code> contient tout ce qui sera affiché à l'écran sur la page web.</li>
+                </ul>
+                <p>Passons maintenant au CSS.</p>
+        </section>
+
+        <section class="langage-css">
+            <h2 id="presentation-css">Qu'est ce que le langage CSS ?</h2>
+            <p>Le CSS (Cascading Style Sheets) est un langage de programmation utilisé pour définir la présentation et le style des documents HTML.
+                Il permet de contrôler l'apparence des éléments d'une page web tels que les couleurs, les polices, les marges, les espacements et bien plus encore.
+                Le CSS utilise des sélecteurs pour cibler des éléments spécifiques et appliquer des règles de style à ces éléments.
+                Il permet également de créer des mises en page réactives et adaptatives pour différents appareils et tailles d'écran.
+                Le CSS est essentiel pour rendre un site web esthétiquement attrayant et cohérent.
+            </p>
+        </section>
+
+        <section class="syntaxe-exemple-css">
+            <h2 id="syntaxe-css">La syntaxe de CSS</h2>
+                <p>La syntaxe globale du langage CSS est relativement simple. Une déclaration CSS se présente toujours de la même manière :</p>
+                    <img src="../assets/images/syntaxe-css.png" alt="syntaxe css">
+                <p><em>Nous pouvons distinguer deux éléments dans cette syntaxe:</em></p>
+                    <ul>
+                        <li>Le premier correspond à ce que l’on appelle le sélecteur.</li>
+                        <li>Le deuxième élément notable de cet exemple se trouve donc entre les accolades (propriété et valeur).</li>
+                    </ul>
+                <p>Le <span class="span-syntaxe-css">sélecteur</span> est un élément clé puisqu’il indique sur quels éléments HTML vont s’appliquer les propriétés CSS qui vont suivre.
+                    Il sera systématiquement suivi d’accolades qui encadreront les propriétés en question.</p>
+                <p>Pour les <span class="span-syntaxe-css">propriétés et valeurs</span>, il s’agit de l’ensemble de paramètres de mise en forme que l’on souhaite appliquer (à l’élément identifié par le sélecteur).
+                    Chaque propriété de mise en forme sera suivie de deux points et de la valeur que l’on souhaite lui appliquer.
+                    La ligne se terminera par un point virgule. Sachez que la plupart du temps, vous ne pourrez pas deviner les propriétés, ni même les valeurs.
+                    Il faudra donc régulièrement vérifier sur un site de référence (ou dans vos notes) le nom des propriétés et les valeurs que vous pouvez leur associer.</p>
+
+                <p><em>Voici un exemple:</em></p>
+                    <img src="../assets/images/exemple-css.png" alt="exemple css">
+                <p> Le sélecteur de l’exemple ci-dessous est h1.
+                    Cela signifie donc que les propriétés listées entre accolades vont s’appliquer à l’ensemble des éléments <code>&lt;h1&gt;</code> trouvés dans le code HTML de la page web.
+                    La propriété <span class="span-exemple-css">color</span> va permettre de définir la couleur du texte qui sera donc rouge et la propriété <span class="span-exemple-css">font-style</span> le style du texte.
+                    Les titres de niveau un de la page s’afficheront donc tous en rouge et en italique.</p>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Copyright 2024 | Deviens Dev</p>
+    </footer>
+    
+</body>
+</html>

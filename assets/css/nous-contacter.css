@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*header*/
+
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 25px;
+    margin-right: 25px;
+}
+
+header .lien-pages{
+    text-decoration: none;
+    color: white;
+}
+
+header .lien-pages:hover{
+    color: rgb(242, 200, 137);
+    border: 1px solid black;
+    border-radius: 24px;
+    background-color: white;
+    padding: 8px;
+    font-size: 16px;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+header{
+    background-color: rgb(242, 200, 137);
+    margin-bottom: 4%;
+}
+
+h1{
+    color: white;
+}
+
+/* Main */
+
+section h2{
+    font-size: 26px;
+    color: grey;
+    text-align: center;
+}
+
+section{
+    border: 5px solid rgb(242, 200, 137);
+    border-radius: 24px;
+    width: 320px;
+    margin: auto;
+    height: auto;
+    background-color: blanchedalmond;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 400;
+    color: grey;
+    padding: 20px;
+}
+
+.submit{
+    margin-top: 20px;
+}
+
+.submit-button{
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: white;
+    color: grey;
+    font-family:'Open Sans', sans-serif;
+    height: 32px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form div textarea{
+    resize: none;
+}
+
+input{
+    height: 24px;
+}
+
+/* footer */
+
+footer p{
+    text-align: center;
+    color: grey;
+}
+
+@media (max-width: 780px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 476px) {
+
+    header ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

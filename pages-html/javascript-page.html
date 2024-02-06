@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/javascript-page.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="../index.html"><img src="../assets/images/logo-site.png" alt="logo site"></a>
+            <h1>Deviens Dev</h1>
+        </div>
+        <ul>
+            <li><a class="lien-pages" href="../pages-html/htmlcss-page.html">HTML/CSS</a></li>
+            <li><a class="lien-pages" href="../pages-html/javascript-page.html">JavaScript</a></li>
+            <li><a class="lien-pages" href="../pages-html/php-page.html">PHP</a></li>
+            <li><a class="lien-pages" href="../pages-html/nous-contacter-page.html">Nous Contacter</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <nav>
+            <div class="div-ul-nav">
+                <h2>Sommaire JavaScript</h2>
+                <ul>
+                    <li><a href="#def-js">Introduction au JavaScript</a></li>
+                    <li><a href="#ou-ecrire-js">Où écrire le code JavaScript ?</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="../assets/images/javascript-symbol.png" alt="illustration Javascript">
+            </div>
+        </nav>
+
+        <section class="intro-js">
+            <h2 id="def-js">Introduction au JavaScript</h2>
+
+            <p>Le JavaScript est un langage de programmation créé en 1995. Le JavaScript est aujourd’hui l’un des
+                langages de programmation les plus populaires et il fait partie des langages web dits « standards » avec
+                le HTML et le CSS.
+                Son évolution est gérée par le groupe ECMA International qui se charge de publier les standards de ce
+                langage.</p>
+            <p>On dit que le HTML, le CSS et le JavaScript sont des standards du web car les principaux navigateurs web
+                (Google Chrome, Safari, Firefox, etc.) savent tous « lire » (ou « comprendre » ou « interpréter ») ces
+                langages et les interprètent généralement de la même façon ce qui signifie qu’un même code va
+                généralement produire le même résultat dans chaque navigateur.</p>
+            <p>Pour définir ce qu’est le JavaScript et le situer par rapport aux autres langages, et donc pour
+                comprendre les intérêts et usages du JavaScript il faut savoir que :</p>
+
+            <ul>
+                <li>Le JavaScript est un langage dynamique ;</li>
+                <li>Le JavaScript est un langage (principalement) côté client ;</li>
+                <li>Le JavaScript est un langage interprété ;</li>
+                <li>Le JavaScript est un langage orienté objet.</li>
+            </ul>
+        </section>
+
+        <section class="ecriture-js">
+
+            <h2 id="ou-ecrire-js">Où écrire le code JavaScript ?</h2>
+            <p>On va pouvoir placer du code JavaScript à trois endroits différents :</p>
+            <ul>
+                <li>Directement dans la balise ouvrante d’un élément HTML ;</li>
+                <li>Dans un élément <span>script</span>, au sein d’une page HTML ;</li>
+                <li>Dans un fichier séparé contenant exclusivement du JavaScript et portant l’extension
+                    <span>.js</span>.</li>
+            </ul>
+
+            <article class="code-js-interieur-balise-html">
+
+                <h3>Placer le code JavaScript dans la balise ouvrante d’un élément HTML</h3>
+                <p>Il est possible que vous rencontriez encore aujourd’hui du code JavaScript placé directement dans la
+                    balise ouvrante d’éléments HTML.
+
+                    Ce type de construction était fréquent à l’époque notamment pour prendre en charge des évènements
+                    comme par exemple un clic.
+                    <br>
+                    Regardez plutôt l’exemple ci-dessous :
+                </p>
+                <img src="../assets/images/exemple-javascript-interieur-balise-html.png"
+                    alt="exemple javascript interieur balise html">
+                <p>Ici, on crée deux boutons en HTML et on place nos codes JavaScript à l’intérieur d’attributs
+                    <span>onclick</span>.
+                    <br>
+                    Le code à l’intérieur des attributs va s’exécuter dès qu’on va cliquer sur le bouton correspondant.
+                    <br>
+                    Dans le cas présent, cliquer sur le premier bouton a pour effet d’ouvrir une fenêtre d’alerte qui
+                    affiche « Bonjour ! ».
+                </p>
+
+            </article>
+
+            <article class="code-js-elem-script-page-html">
+
+                <h3>Placer le code JavaScript dans un élément script, au sein d’une page HTML</h3>
+                <p>On va également pouvoir placer notre code JavaScript dans un élément <span>script</span> qui est
+                    l’élément utilisé pour indiquer qu’on code en JavaScript.</p>
+
+                <p>On va pouvoir placer notre élément <span>script</span> n’importe où dans notre page HTML, aussi bien
+                    dans l’élément <span>head</span> qu’au sein de l’élément <span>body</span>.
+                    <br>
+                    De plus, on va pouvoir indiquer plusieurs éléments <span>script</span> dans une page HTML pour
+                    placer plusieurs bouts de code JavaScript à différents endroits de la page.
+                </p>
+                <p>Regardez plutôt l’exemple ci-dessous. Ce code produit le même résultat que le précédent :</p>
+                <img src="../assets/images/exemple-javascript-elem-script-html.png"
+                    alt="exemple javascript intérieur élément script page html">
+                <p>Cette méthode est meilleure que la précédente mais n’est une nouvelle fois pas idéalement celle que
+                    nous allons utiliser pour plusieurs raisons.</p>
+                <p>Tout d’abord, comme précédemment, la séparation des codes n’est pas optimale ici puisqu’on mélange du
+                    JavaScript et du HTML ce qui peut rendre l’ensemble confus et complexe à comprendre dans le cadre
+                    d’un gros projet.</p>
+                <p>De plus, si on souhaite utiliser les mêmes codes sur plusieurs pages, il faudra les copier-coller à
+                    chaque fois ce qui n’est vraiment pas efficient et ce qui est très mauvais pour la maintenabilité
+                    d’un site puisque si on doit changer une chose dans un code copié-collé dans 100 pages de notre site
+                    un jour, il faudra effectuer la modification dans chacune des pages.</p>
+
+            </article>
+
+            <article class="code-js-fichier-separe">
+
+                <h3>Placer le code JavaScript dans un fichier séparé</h3>
+                <p>Pour faire cela, nous allons devoir créer un nouveau fichier et l’enregistrer avec une extension
+                    <span>.js</span>.
+                    <br>
+                    Ensuite, nous allons faire appel à notre fichier JavaScript depuis notre fichier HTML.
+                </p>
+
+                <p>Pour cela, on va à nouveau utiliser un élément <span>script</span> mais nous n’allons cette fois-ci
+                    rien écrire à l’intérieur.
+                    A la place, on va plutôt ajouter un attribut <span>src</span> à notre élément <span>script</span> et
+                    lui passer en valeur l’adresse du fichier. Si votre fichier <span>.js</span> se situe dans le même
+                    dossier que votre fichier <span>.html</span>, il suffira d’indiquer le nom du fichier en valeur de
+                    l’attribut <span>src</span>.</p>
+
+                <p>Notez qu’un élément <span>script</span> ne peut posséder qu’un attribut <span>src</span>.
+                    Dans le cas où on souhaite utiliser plusieurs fichiers JavaScript dans un fichier HTML, il faudra
+                    renseigner autant d’éléments <span>script</span> dans le fichier avec chaque élément appelant un
+                    fichier en particulier.</p>
+
+                <p>Le code ci-dessous produit à nouveau les mêmes résultats que précédemment.</p>
+
+                <div class="img-js-fichier-separe">
+                    <img src="../assets/images/exemple-javascript-autre-page.png"
+                        alt="exemple javascript fichier séparé">
+                    <img src="../assets/images/exemple-javascript-autre-page2.png"
+                        alt="exemple javascript fichier séparé suite">
+                </div>
+
+                <p>Cette méthode sera notre méthode préférée puisqu’elle permet une excellente séparation du code et une
+                    maintenabilité optimale de celui-ci.
+                    En effet, si on veut insérer le code JavaScript contenu dans notre fichier dans 100 pages
+                    différentes, il suffira ici d’appeler ce fichier JavaScript dans les 100 pages.
+                    En cas de modification du code, il suffira alors de le modifier une fois dans le fichier JavaScript.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2024 | Deviens Dev</p>
+    </footer>
+
+</body>
+
+</html>

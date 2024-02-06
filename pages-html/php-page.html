@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/php-page.css">
+    <title>PHP</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="../index.html"><img src="../assets/images/logo-site.png" alt="logo site"></a>
+            <h1>Deviens Dev</h1>
+        </div>
+        <ul>
+            <li><a class="lien-pages" href="../pages-html/htmlcss-page.html">HTML/CSS</a></li>
+            <li><a class="lien-pages" href="../pages-html/javascript-page.html">JavaScript</a></li>
+            <li><a class="lien-pages" href="../pages-html/php-page.html">PHP</a></li>
+            <li><a class="lien-pages" href="../pages-html/nous-contacter-page.html">Nous Contacter</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <nav>
+            <div class="div-ul-nav">
+                <h2>Sommaire PHP</h2>
+                <ul>
+                    <li><a href="#titre-def-role-php">Définition et rôle du PHP</a></li>
+                    <li><a href="#titre-statique-dynamique">Sites statiques et sites dynamiques</a></li>
+                    <li><a href="#php-echo-print">Afficher un résultat en PHP <br> avec une instruction echo ou print</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="../assets/images/logo-php.png" alt="illustration PHP">
+            </div>
+        </nav>
+        
+        <section class="def-role-php">
+
+            <h2 id="titre-def-role-php">Définition et rôle du PHP</h2>
+            <p>Le terme PHP est l’acronyme de « PHP Hypertext Preprocessor ».
+                Le premier « P » de PHP est en effet lui-même l’abréviation de « PHP », une curiosité qui ne va pas présenter une grande importance pour nous.</p>
+            <p>Le PHP va nous permettre de créer des pages qui vont être générées dynamiquement.
+                En d’autres mots, grâce au PHP, nous allons pouvoir afficher des contenus différents sur une même page en fonction de certaines variables : l’heure de la journée, le fait que l’utilisateur soit connu et connecté ou pas, etc.</p>
+            <p>Pour illustrer cela, prenons l’exemple d’un espace client sur un site web e-commerce.
+                Un utilisateur arrive sur un site e-commerce sur lequel il a déjà commandé et crée un espace client. Lors de son arrivée sur le site, il dispose d’un formulaire de connexion à son espace client.</p>
+            <p>Il va alors devoir fournir des informations (généralement un pseudonyme et un mot de passe) pour pouvoir se connecter et accéder à son espace client.
+                Cet espace client est personnalisé : il va certainement contenir l’historique des commandes de l’utilisateur, son profil avec ses informations de facturation et son adresse de livraison, etc.</p>
+            <p>Ici, lorsque l’utilisateur rentre ses informations de connexion, celles-ci vont être traitées et analysées en PHP.
+                On va vérifier si les informations sont bonnes et si c’est le cas récupérer des informations spécifiques à cet utilisateur et générer dynamiquement les pages de son espace client avec ces informations.</p>
+            <p>Lorsqu’un utilisateur fournit des informations comme une adresse, un numéro de téléphone ou passe une commande, les données sont généralement enregistrées dans ce qu’on appelle une base de données.
+                Le PHP va également nous permettre d’aller récupérer des données dans une base de données pour s’en resservir.</p>
+            <p>De plus, notez que le PHP va s’exécuter côté serveur. Il fait ainsi partie des langages qu’on nomme « server side » en opposition aux langages « client side » qui s’exécutent côté client.</p>
+
+        </section>
+
+        <section class="site-statique-dynamique">
+
+            <h2 id="titre-statique-dynamique">Sites statiques et sites dynamiques</h2>
+            <p>Les langages de programmation axés web peuvent être catégorisés selon deux grands types de classement :</p>
+
+            <ul>
+                <li>Langages statiques VS langages dynamiques ;</li>
+                <li>Langages avec exécution côté client VS langages avec exécution côté serveur.</li>
+            </ul>
+
+            <p>Les sites dits statiques se caractérisent par le fait qu’ils sont… statiques : ils ne possèdent ni interaction, ni la capacité de s’adapter aux visiteurs.
+                Le code des différentes pages ne va pas changer en fonction d’un utilisateur ou d’une autre variable.
+                Un site de type “CV” par exemple, ou un site servant simplement à présenter ou à donner des informations sur une chose en particulier vont généralement être des sites statiques car il n’y a aucune interaction ni adaptation dynamique avec le visiteur.
+                Un site créé uniquement en HTML et en CSS par exemple sera toujours statique.</p>
+
+            <p>Les sites dynamiques, en revanche, vont pouvoir fournir des pages différentes pour chaque visiteur ou selon différentes contraintes et vont nous permettre d’interagir avec l’utilisateur en lui permettant de nous envoyer des données par exemple.
+                De nombreux langages vont nous permettre de créer des sites dynamiques, chacun avec leurs points forts et leurs faiblesses et leur champ d’application.
+                Dans ce cours, nous nous concentrons sur le binôme certainement le plus connu parmi ces langages : le PHP qui va être utile pour tout ce qui est calcul / traitement des données et le MySQL qui va nous servir à gérer nos bases de données.</p>
+
+        </section>
+
+        <section class="resultat-php-instruction-echo-print">
+
+            <h2 id="php-echo-print">Afficher un résultat en PHP avec une instruction echo ou print</h2>
+            <p>Commençons déjà par définir ce qu’on appelle « structure de langage » (« language construct » en anglais) afin de partir sur de bonnes bases.</p>
+            <p>Une structure de langage correspond simplement à une partie de la syntaxe d’un langage. 
+                La syntaxe d’un langage informatique correspond à un ensemble de mots clefs au sens bien défini par le langage. A partir de cette syntaxe, et en combinant les mots clefs, nous allons pouvoir construire des expressions.</p>
+            <p>Les structures de langage sont en d’autres termes les atomes d’un langage informatique : ce sont les unités de base d’un langage qu’on va pouvoir utiliser pour construire des expressions.</p>
+            <p>De nombreuses personnes considèrent à tort que les structures de langage echo et print sont des fonctions. Or, les fonctions et les structures de langage sont deux types différents d’objets qui ne vont pas être traités de la même façon.</p>
+            <p>A votre niveau, il risque néanmoins d’être compliqué de bien comprendre et de bien vous représenter ce qu’est une structure de langage.
+                Ne vous inquiétez pas, c’est tout à fait normal : bien souvent, en code, une notion nécessite de connaitre un ensemble d’autres notions pour être bien comprise tandis que les autres notions ont besoin de cette première notion pour être comprises… C’est toute la difficulté lorsqu’on commence à apprendre un nouveau langage !</p>
+            
+            <article class="structure-echo-print">
+
+                <h3>Les structures de langage echo et print</h3>
+                <p>Les structures de langage <span>echo</span> et <span>print</span> vont nous permettre d’afficher un résultat en PHP.</p>
+                <p>Pour cela, nous allons écrire notre <span>echo</span> ou notre <span>print</span> suivi de ce qu’on souhaite afficher et suivi d’un point-virgule pour terminer l’instruction, en plaçant le tout dans une balise PHP.</p>
+                <p>Regardez plutôt l’exemple suivant qu’on va immédiatement expliquer :</p>
+                    
+                <div class="img-php-echo-print">
+                    <img src="../assets/images/exemple-php.png" alt="exemple php">
+                    <img src="../assets/images/exemple-php2.png" alt="résultat exemple php">
+                </div>
+
+                <p>Nous pouvons noter plusieurs choses à partir de l’exemple précédent. Déjà, vous pouvez observer qu’on peut tout à fait passer des balises HTML dans ce qu’on souhaite afficher.
+                    Ces balises HTML seront lues comme les autres par le navigateur.</p>
+
+                <p>Ensuite, vous pouvez remarquer que j’utilise parfois des apostrophes droites, parfois des guillemets droits et d’autres fois rien du tout pour entourer le contenu qui devra être affiché.</p>
+                <p>Ici, vous pouvez retenir que les chaines de caractères (c’est-à-dire les contenus de type texte) doivent toujours être entourés d’un couple d’apostrophes ou de guillemets pour pouvoir être affichées.
+                    Cela n’est pas nécessaire pour afficher un chiffre.</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2024 | Deviens Dev</p>
+    </footer>
+
+    
+    
+</body>
+</html>
